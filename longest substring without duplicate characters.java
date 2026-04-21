@@ -15,6 +15,5 @@ class Solution {
             maxlen=Math.max(maxlen,length);
         }
     return maxlen;
-
     }
 }
