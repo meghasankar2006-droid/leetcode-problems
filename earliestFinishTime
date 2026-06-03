@@ -7,7 +7,7 @@ class Solution {
 
         long ans = Long.MAX_VALUE;
 
-        // Land -> Water
+    
         ans = Math.min(ans,
                 solve(landStartTime, landDuration,
                       waterStartTime, waterDuration));
