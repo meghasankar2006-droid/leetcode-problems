@@ -1,0 +1,27 @@
+class Solution {
+    public int[] searchRange(int[] nums, int target) {
+        int []val=new int[2];
+        val[0]=-1;
+        val[1]=-1;
+        for(int i=0;i<nums.length;i++){
+            if(val[0]==-1 && nums[i]==target){
+                val[0]=i;
+            }
+            if(nums[i]==target){
+                val[1]=i;
+            }
+        }
+        return val;
+    }
+public static void main(String[]args){
+Solution obj=new Solution();
+int n=sc.nextInt();
+int []nums=new int[n];
+int target=sc.nextInt();
+for(int i=0;i<n;i++){
+nums[i]=sc.nextInt();
+}
+int []result=obj.searchRange(nums,target) ;
+System.out.println(Arrays.toString(result));
+}
+}
