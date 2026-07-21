@@ -14,14 +14,14 @@ class Solution {
         return val;
     }
 public static void main(String[]args){
-Solution obj=new Solution();
-int n=sc.nextInt();
-int []nums=new int[n];
-int target=sc.nextInt();
-for(int i=0;i<n;i++){
-nums[i]=sc.nextInt();
-}
-int []result=obj.searchRange(nums,target) ;
-System.out.println(Arrays.toString(result));
-}
+    Solution obj=new Solution();
+    int n=sc.nextInt();
+    int []nums=new int[n];
+    int target=sc.nextInt();
+    for(int i=0;i<n;i++){
+        nums[i]=sc.nextInt();
+    }
+    int []result=obj.searchRange(nums,target) ;
+    System.out.println(Arrays.toString(result));
+    }
 }
