@@ -5,6 +5,7 @@ class Solution {
                 if(nums[i]==target-nums[j]){
                     return new int[]{i,j};    
                 }
+                
             }
         }
         return new int[]{};
